@@ -1,0 +1,119 @@
+@keyframes flash {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+#boot {
+  margin: auto;
+  padding: 0;
+
+  width: min(100vw, 177.78vh);
+  height: min(100vh, 56.25vw);
+
+  background: black;
+
+  font-family: "Rodin NTLG Pro";
+  color: white;
+  text-align: center;
+
+  container-type: size;
+}
+
+#boot span {
+  display: block;
+}
+
+#boot-title {
+  font-weight: 800;
+  font-size: 3.5cqw;
+  padding-top: 6cqw;
+}
+
+#boot-caution {
+  height: 6cqw;
+  vertical-align: middle;
+}
+
+#boot-message {
+  font-weight: 700;
+  font-size: 2.5cqw;
+  line-height: 4cqw;
+  padding-top: 4cqw;
+}
+
+#boot-online {
+  font-weight: 700;
+  font-size: 2cqw;
+  padding-top: 3.9cqw;
+}
+
+#boot-link {
+  font-weight: 700;
+  font-size: 2.5cqw;
+  color: #8fadf0;
+  padding-top: 0;
+  margin-top: 0;
+  line-height: 4cqw;
+}
+
+#boot-hint {
+  font-weight: 700;
+  font-size: 2.5cqw;
+  padding-top: 3cqw;
+  opacity: 0;
+}
+
+#overlay {
+  background: black;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 9999;
+  opacity: 1;
+}
+
+.boot-flashing {
+  position: relative;
+  animation: flash 1s infinite;
+  z-index: 1;
+}
+
+.boot-fadein {
+  animation: fadein 0.5s forwards;
+}
+
+.boot-fadeout {
+  animation: fadeout 0.5s forwards;
+}
+
+#boot-a {
+  vertical-align: -1cqw;
+  height: 4cqw;
+}

@@ -1,0 +1,60 @@
+@import url("boot.css");
+@import url("menu.css");
+
+@font-face {
+  font-family: "Rodin NTLG Pro";
+  src: url("../rodin/rodinL.otf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Rodin NTLG Pro";
+  src: url("../rodin/rodinM.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Rodin NTLG Pro";
+  src: url("../rodin/rodinDB.otf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Rodin NTLG Pro";
+  src: url("../rodin/rodinB.otf");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Rodin NTLG Pro";
+  src: url("../rodin/rodinEB.otf");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Rodin NTLG Pro";
+  src: url("../rodin/rodinUB.otf");
+  font-weight: 900;
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  background-color: black;
+  position: relative;
+}
+
+.nocursor {
+  cursor: none;
+}
+
+.hidden {
+  display: none;
+}
